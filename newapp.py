@@ -773,11 +773,11 @@ def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-#if __name__ == '__main__':
-#    app.run()
-    
-    
 if __name__ == '__main__':
-    t1 = threading.Thread(target=GUI)
-    t1.start()
-    app.run(host = '0.0.0.0', port = 8080)
+    app.run()
+    
+    
+#if __name__ == '__main__':
+#    t1 = threading.Thread(target=GUI)
+#    t1.start()
+#    app.run(host = '0.0.0.0', port = 8080)
